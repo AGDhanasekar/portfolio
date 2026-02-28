@@ -31,7 +31,6 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
-    cursor: none;
 }
 
 /* Typography */
@@ -513,4 +512,16 @@ footer p {
     .custom-cursor {
         display: none;
     }
+}
+.custom-cursor {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #58a6ff 0%, transparent 70%);
+    box-shadow: 0 0 15px #58a6ff;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: transform 0.15s ease-out;
 }
