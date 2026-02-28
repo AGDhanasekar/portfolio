@@ -31,6 +31,7 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    cursor: none;
 }
 
 /* Typography */
@@ -489,5 +490,27 @@ footer p {
     
     .section {
         padding: 5rem 5%;
+    }
+}
+/* ===== Custom DevOps Cursor ===== */
+
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%);
+    box-shadow: 0 0 15px var(--accent-color);
+    z-index: 9999;
+    transition: transform 0.1s ease;
+}
+@media (max-width: 768px) {
+    body {
+        cursor: auto;
+    }
+    .custom-cursor {
+        display: none;
     }
 }
