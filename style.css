@@ -209,15 +209,14 @@ h1, h2, h3, h4 {
 
 .glow {
     position: absolute;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, var(--accent-color) 0%, transparent 60%);
+    width: 650px;
+    height: 650px;
+    background: radial-gradient(circle, #58a6ff 0%, #2ea043 40%, transparent 70%);
     border-radius: 50%;
-    filter: blur(100px);
-    opacity: 0.15;
-    animation: float 10s infinite alternate ease-in-out;
+    filter: blur(90px);
+    opacity: 0.25;
+    animation: float 12s infinite alternate ease-in-out;
 }
-
 .blob-1 { top: -10%; left: -10%; }
 .blob-2 { bottom: -20%; right: -10%; background: radial-gradient(circle, var(--gradient-end) 0%, transparent 60%); animation-delay: -5s; }
 
