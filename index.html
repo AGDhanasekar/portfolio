@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.G. Dhanasekar - DevOps Engineer</title>
+    <meta name="description" content="Portfolio of A.G. Dhanasekar, a DevOps Engineer specializing in modern infrastructure, CI/CD, and cloud native technologies.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AGD<span class="highlight">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="slide-up">Hi, I'm <span class="highlight">A.G. Dhanasekar</span></h1>
+            <h2 class="slide-up delay-1">DevOps Engineer</h2>
+            <p class="slide-up delay-2">Building resilient, scalable, and automated cloud infrastructure.</p>
+            <div class="cta-buttons slide-up delay-3">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="glow blob-1"></div>
+            <div class="glow blob-2"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section reveal">
+            <div class="container">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am a passionate <strong>DevOps Engineer</strong> dedicated to streamlining software delivery and enhancing system reliability. With expertise in modern cloud providers, containerization, and robust CI/CD pipelines, I bridge the gap between development and operations.</p>
+                        <p>My core goal is to architect and automate everything from infrastructure provisioning as code to zero-downtime deployments. I focus on ensuring that engineering teams can ship features faster, safer, and with complete visibility.</p>
+                        <ul class="skills-list">
+                            <li>Linux & Scripting</li>
+                            <li>CI/CD Automation</li>
+                            <li>Docker & Kubernetes</li>
+                            <li>Cloud Native Architectures</li>
+                            <li>Infrastructure as Code</li>
+                            <li>Monitoring & Observability</li>
+                        </ul>
+                    </div>
+                    <div class="about-visual">
+                        <div class="terminal-window">
+                            <div class="terminal-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="terminal-body">
+                                <p><span class="prompt">➜</span> <span class="command">whoami</span></p>
+                                <p class="output">A.G. Dhanasekar</p>
+                                <p><span class="prompt">➜</span> <span class="command">cat skills.json</span></p>
+                                <p class="output">{"role": "DevOps", "status": "Ready to deploy"}</p>
+                                <p><span class="prompt blink">_</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section reveal">
+            <div class="container">
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-desc">Automatically fetched from my GitHub workspace.</p>
+                <div id="github-projects" class="projects-grid">
+                    <!-- Projects will be injected here via JS -->
+                    <div class="loader">Fetching from GitHub🚀...</div>
+                </div>
+                <div class="github-link-container">
+                    <a href="https://github.com/AGDhanasekar" target="_blank" rel="noopener noreferrer" class="btn secondary github-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        View Full Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+            <div class="container">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <div class="contact-card">
+                    <p>Always looking for new challenges and opportunities to build scalable systems. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    <a href="mailto:hello@example.com" class="btn primary elevate">Say Hello</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> A.G. Dhanasekar. Built with clean code and dark themes.</p>
+        <div class="socials">
+            <a href="https://github.com/AGDhanasekar" target="_blank" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
