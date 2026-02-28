@@ -209,13 +209,19 @@ h1, h2, h3, h4 {
 
 .glow {
     position: absolute;
-    width: 650px;
-    height: 650px;
-    background: radial-gradient(circle, #58a6ff 0%, #2ea043 40%, transparent 70%);
+    width: 700px;
+    height: 700px;
+    background: linear-gradient(135deg, #58a6ff, #ab68ff, #2ea043);
     border-radius: 50%;
-    filter: blur(90px);
-    opacity: 0.25;
-    animation: float 12s infinite alternate ease-in-out;
+    filter: blur(120px);
+    opacity: 0.2;
+    animation: rotateGlow 20s linear infinite;
+}
+
+@keyframes rotateGlow {
+    0% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(360deg) scale(1.1); }
+}
 }
 .blob-1 { top: -10%; left: -10%; }
 .blob-2 { bottom: -20%; right: -10%; background: radial-gradient(circle, var(--gradient-end) 0%, transparent 60%); animation-delay: -5s; }
